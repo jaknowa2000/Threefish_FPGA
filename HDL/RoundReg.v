@@ -1,3 +1,4 @@
+//There is stored state after each round of a cipher.
 
 module RoundReg (
 	input wire		 	  	inClk,

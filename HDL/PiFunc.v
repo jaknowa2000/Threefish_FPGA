@@ -1,3 +1,4 @@
+// It is implementation of Pi function in threefish.
 
 module PiFunc (
 	input wire	[511:0] inData,

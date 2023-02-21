@@ -1,3 +1,4 @@
+//There is stored Subkey after each round of cipher. 
 
 module KeyReg (
 	input wire		 	  	inClk,

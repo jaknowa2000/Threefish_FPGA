@@ -1,3 +1,5 @@
+// Simple xor of subkey with state, where word is 64 bits.
+
 
 module AddKeyFunc (
 	input wire	[511:0] inBlock,

@@ -1,3 +1,14 @@
+/*It is a simulation of Threefish cipher. 
+There are two tests. First is a one encryption with input (regKey, RegData, regTweak)
+and ciphertext (regTestResult) taken from documentation of this cipher.
+
+The second test has the same key and tweak, but plaintext is regTestResult.
+Then 10 encryptions are performed, where the next plaintext is the previous ciphertext. 
+Result after 10 encryptions should be regTestResult1, which was genereted with
+software implementation.
+
+The result of each test is displayed.
+*/
 
 module SimThreeFishBlock;
 

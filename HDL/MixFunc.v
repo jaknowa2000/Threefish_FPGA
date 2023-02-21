@@ -1,3 +1,4 @@
+// It is implementation of Mix function in threefish.
 
 module MixFunc (
 	input wire	[7:0]	  inRound,

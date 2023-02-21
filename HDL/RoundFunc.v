@@ -1,3 +1,5 @@
+// There is calculating one round of cipher.
+
 
 module RoundFunc (
 	input wire	[511:0] inKey,

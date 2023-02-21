@@ -1,3 +1,5 @@
+//This module manages all encryption
+
 
 module ThreeFishBlockControl(
 	input wire		inClk,
@@ -41,14 +43,19 @@ begin
 	
 end
 
+//Informs whether all input data are ready.
 assign outRoundReginoutWr = (regRound == 8'b0) ? inBlockWr && inTweakWr && inKeyWr : 1'b0;
 
+//Informs whether it is 0 round
 assign outRoundRegininWr  = (regRound == 8'b0) ? 1'b0 : 1'b1;
 
+//Informs whether 72 rounds have passed
 assign outBlockOutRegWr   = (regRound == 8'd73) ? 1'b1 : 1'b0;
 
+//Informs whether the encryption continues
 assign outBusy				  = (regRound == 8'b0) ? 1'b0 : 1'b1;
 
+//it is a number of current round
 assign outRound			  = regRound - 8'd1;
  
 endmodule

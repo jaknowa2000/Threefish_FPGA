@@ -1,4 +1,8 @@
- 
+/* There is performed last subkey adding (after 72 rounds of cipher).
+Output of this module will be ciphertext.
+Signal inWr is increasing after 72 rounds only for one clock cicle.
+*/ 
+
 module ThreeFishBlockOutReg(
 	input wire				inClk,
 	input wire  			inWr,

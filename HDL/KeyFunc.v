@@ -1,3 +1,4 @@
+// It is implementation of KeySchedule function in threefish.
 
 module KeyFunc (
 	input wire	[511:0] inKey,

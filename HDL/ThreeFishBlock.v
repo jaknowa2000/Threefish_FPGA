@@ -1,3 +1,5 @@
+// Connetcion of all modules.
+
 	 
 module ThreeFishBlock(
 	input wire			  inClk,
